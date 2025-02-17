@@ -1,0 +1,41 @@
+<!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body{background-color:#f0f0f0;font-family:Poppins,sans-serif}</style>
+<style>body{background-color:#f0f0f0}.layout-container{margin:0 auto;max-width:60vw}@media (max-width:768px){.layout-container{max-width:100%;padding:0 1rem}}</style>
+<style>ul[data-v-bdd793ab]{border-bottom:1px solid;border-top:1px solid;display:flex;justify-content:center;list-style-type:none;margin:0;padding-bottom:.5em;padding-top:.5em}li[data-v-bdd793ab]{margin-right:1rem}a[data-v-bdd793ab]{text-decoration:none}a[data-v-bdd793ab]:hover{color:#007bff}</style>
+<style>.blog-post[data-v-be5447f7]{margin:0 auto}h1[data-v-be5447f7]{font-size:2.5rem;margin-bottom:.5rem}.date[data-v-be5447f7]{margin-bottom:2rem}.content h2[data-v-be5447f7]{font-size:1.8rem;margin-bottom:1rem;margin-top:2rem}.content p[data-v-be5447f7]{line-height:1.6;margin-bottom:1rem}.code-block[data-v-be5447f7]{background-color:#f4f4f4;border:1px solid #ddd;overflow-y:auto;padding:0 1rem}.code-block code[data-v-be5447f7]{display:block;font-family:monospace;white-space:pre}</style>
+<link rel="stylesheet" href="/_nuxt/entry.DdW-fJz4.css">
+<link rel="preload" as="fetch" crossorigin="anonymous" href="/blog/claude-as-a-video-editor/_payload.json?c2a4386c-d8cd-4c36-bfbf-bc3f17544bb7">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/BzxOrH6q.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/CDa-GisJ.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/CrhKLoWh.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/C9TDvJUa.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/CW3qD_VI.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/Ceb56x-4.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/BtwaY0mV.js">
+<script type="module" src="/_nuxt/BzxOrH6q.js" crossorigin></script></head><body><div id="__nuxt"><div class="layout-container"><nav data-v-bdd793ab><ul data-v-bdd793ab><li data-v-bdd793ab><a href="/" data-v-bdd793ab>Home</a></li><li data-v-bdd793ab><a href="/blog" data-v-bdd793ab>Blog</a></li><li data-v-bdd793ab><a href="/projects" data-v-bdd793ab>Projects</a></li></ul></nav><!--[--><div class="blog-post" data-v-be5447f7><h1 data-v-be5447f7>Claude as a Video Editor</h1><p class="date" data-v-be5447f7>08 September 2024</p><div class="content" data-v-be5447f7><p data-v-be5447f7> Recently I wanted to speed up a demo video 10 times. Having minimum experience with video editing but convinced that such a simple action should be possible with a built-in Windows editor, I mindlessly searched “windows video speed up” on DuckDuckGo and clicked the first credible-looking result. According to the <a href="https://www.thewindowsclub.com/how-to-speed-up-a-video-in-windows" data-v-be5447f7>tutorial</a>, the speed-up could be done in the native Photos app on Windows. Great! </p><p data-v-be5447f7> Following the tutorial, I </p><ol data-v-be5447f7><li data-v-be5447f7>launched the Photos app</li><li data-v-be5447f7>imported and selected the video</li><li data-v-be5447f7>created a new video project – wait, how do I create a new video project?</li></ol><p data-v-be5447f7> Scrolling below in the tutorial, there was a screenshot with a red box (I just love those) directing me to simply click the “New” button after selecting a video. Easy. Unfortunately, for some mysterious reason I could not find the button in the app, and after a minute of clicking around I hopelessly thought: What do I do now? Google* “windows photos new video project”? Download some shady app the tutorial definitely recommends as an alternative option? </p><p data-v-be5447f7> Finally, I thought: wait, I’m a programmer. I have zero interest in learning video editing, I just want to speed up a stupid demo video for my <a href="https://illuminovel.com" data-v-be5447f7>half-baked project</a>. There’s definitely a way to achieve this with python. And what better way to write a simple python script than instructing an LLM using a natural language? </p><p data-v-be5447f7> I greeted <a href="https://claude.ai" data-v-be5447f7>Claude</a> with a generic “Write a python script to speed up an mp4 video 10x.”, blindly copied the code, rewrote the input and output path, pip-installed a required library, runned the script, and voila, it worked liked charm! No need to navigate confusing Windows UI or install any apps I probably wouldn’t use. For reference, here’s the script: </p><pre class="code-block" data-v-be5447f7>        <code data-v-be5447f7>
+from moviepy.editor import VideoFileClip
+
+def speed_up_video(input_path, output_path, speed_factor=10):
+    # Load the video clip
+    video = VideoFileClip(input_path)
+    
+    # Speed up the video
+    fast_video = video.speedx(speed_factor)
+    
+    # Write the result to a file
+    fast_video.write_videofile(output_path)
+    
+    # Close the video clips
+    video.close()
+    fast_video.close()
+
+# Example usage
+input_video = &quot;input_video.mp4&quot;
+output_video = &quot;output_video_10x.mp4&quot;
+speed_up_video(input_video, output_video)
+
+print(f&quot;Video has been sped up 10x and saved as {output_video}&quot;)
+        </code>
+      </pre></div></div><!--]--></div></div><div id="teleports"></div><script type="application/json" data-nuxt-data="nuxt-app" data-ssr id="__NUXT_DATA__" data-src="/blog/claude-as-a-video-editor/_payload.json?c2a4386c-d8cd-4c36-bfbf-bc3f17544bb7">[{"state":1,"once":3,"_errors":4,"serverRendered":6,"path":7,"prerenderedAt":8},["Reactive",2],{},["Set"],["ShallowReactive",5],{},true,"/blog/claude-as-a-video-editor",1739789183492]</script>
+<script>window.__NUXT__={};window.__NUXT__.config={public:{},app:{baseURL:"/",buildId:"c2a4386c-d8cd-4c36-bfbf-bc3f17544bb7",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script></body></html>

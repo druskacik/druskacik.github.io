@@ -73,7 +73,9 @@ print(f"Video has been sped up 10x and saved as {output_video}")
 </template>
 
 <script setup>
-// No additional setup required for this simple blog post
+useHead({
+    title: 'Claude as a Video Editor',
+})
 </script>
 
 <style scoped>

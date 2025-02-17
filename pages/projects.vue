@@ -3,6 +3,13 @@
       <projects-list />
     </div>
   </template>
+
+
+<script setup>
+useHead({
+    title: 'Róbert Druska - Projects',
+})
+</script>
   
   <style scoped>
   .projects-page {

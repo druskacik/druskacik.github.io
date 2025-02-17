@@ -11,6 +11,12 @@
     <blog-list />
 </template>
 
+<script setup>
+useHead({
+    title: 'Róbert Druska',
+})
+</script>
+
 <style scoped>
 
 ul {

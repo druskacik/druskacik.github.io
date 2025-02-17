@@ -18,6 +18,12 @@
     </div>
 </template>
 
+<script setup>
+useHead({
+    title: 'The Difference of Celestial Bodies',
+})
+</script>
+
 <style scoped>
 .blog-post {
     margin: 0 auto;

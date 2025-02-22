@@ -1,5 +1,6 @@
 <template>
     <h1>Róbert Druska</h1>
+    <p>From Slovakia, currently living in Prague.</p>
     <p>Contacts:</p>
     <ul>
         <li><a href="https://t.me/rdruska">Telegram</a></li>

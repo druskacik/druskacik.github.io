@@ -68,6 +68,9 @@ speed_up_video(input_video, output_video)
 print(f"Video has been sped up 10x and saved as {output_video}")
         </code>
       </pre>
+      <p>
+        This is just a simple example, but more and more in the recent two years have I found myself turning to LLMs as the first solution. True, usually for simple tasks such as this one, but with recent focus on agentic workflows, I think it’s safe to say the capabilities will be only more powerful. Specialized software tools will always be necessary for more fine-grained control of the output, but more and more often we’ll be able to get the result only by explaining it to an AI. Great time to be alive!
+      </p>
         </div>
     </div>
 </template>
@@ -81,6 +84,7 @@ useHead({
 <style scoped>
 .blog-post {
     margin: 0 auto;
+    margin-bottom: 4rem;
 }
 
 h1 {

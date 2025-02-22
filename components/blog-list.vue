@@ -8,10 +8,16 @@
 </template>
 
 <script setup>
-const articles = [
-    { id: 1, slug: 'claude-as-a-video-editor', title: 'Claude as a video editor', date: '17 February 2025' },
-    { id: 2, slug: 'the-difference-of-celestial-bodies', title: 'The Difference of Celestial Bodies (poem)', date: '15 February 2025' },
-];
+
+const { data } = await useAsyncData(() => queryCollection('content').order('date', 'DESC').all())
+
+const articles = data.value.map(article => ({
+    id: article.id,
+    slug: article.stem,
+    title: article.title,
+    date: new Date(article.date).toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' })
+}))
+
 </script>
 
 <style scoped>

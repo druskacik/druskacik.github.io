@@ -1,0 +1,1 @@
+import{_ as t}from"./XbaXpZbV.js";import{u as e}from"./CklwEZnj.js";import{_,c as s,b as a,o as r}from"./AnWNuGeo.js";import"./BDxsyEJT.js";import"./v0JWGbXJ.js";const c={class:"blog-page"},n={__name:"index",setup(p){return e({title:"Róbert Druska - Blog"}),(m,i)=>{const o=t;return r(),s("div",c,[a(o)])}}},x=_(n,[["__scopeId","data-v-b78adb82"]]);export{x as default};

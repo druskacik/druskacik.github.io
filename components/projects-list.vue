@@ -10,14 +10,19 @@
 <script setup>
 const projects = [
     {
-        url: 'https://illuminovel.com',
-        title: 'Illuminovel',
-        description: 'Book to soundtrack generator. AI book illustrations.',
-    },
-    {
         url: 'https://infldb.com',
         title: 'Infldb',
         description: 'European influencers database.',
+    },
+    {
+        url: 'https://classical.sk',
+        title: 'Classical.sk',
+        description: 'Classical music concerts in Slovakia.',
+    },
+    {
+        url: 'https://illuminovel.com',
+        title: 'Illuminovel',
+        description: 'Book to soundtrack generator. AI book illustrations.',
     },
     {
         url: 'https://bswatcher.com',

@@ -8,7 +8,7 @@
 <style>
 
 body {
-  background-color: #f0f0f0; /* Very light gray */
+  background-color: #f5f5f5;
 }
 
 

@@ -7,7 +7,7 @@
 <style>
 
 body {
-  background-color: #f0f0f0;
+  background-color: #f5f5f5;
   font-family: Nunito, Avenir, Helvetica, Arial, sans-serif;
 }
 

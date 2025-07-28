@@ -9,7 +9,7 @@ More and more people are using an LLM instead of a traditional search engine. As
 
 The problem is that while we can analyse and optimise for traditional search using Google Search Console, with LLMs we are blind. We see *chatgpt.com* showing among top website referrers, but we have no clue what the conversations were about. We can only guess.
 
-[Many](https://mentionedby.ai) [services](https://www.athenahq.ai/) [popped](https://arvow.com/llm-brand-mention-rank-tracker) [up](https://productrank.ai/), promising to analyse mentions of brands across various LLMs, however, they mostly work by simulating user queries, and that approach can go only so far. It would be more useful to be able to see the context in conversations of real users, however, this is obviously difficult to do without breaching their privacy.
+[Many](https://llmrefs.com/?ref=róbert) [services](https://www.athenahq.ai/) [popped](https://mentionedby.ai) [up](https://productrank.ai/), promising to analyse mentions of brands across various LLMs, however, they mostly work by simulating user queries, and that approach can go only so far. It would be more useful to be able to see the context in conversations of real users, however, this is obviously difficult to do without breaching their privacy.
 
 ## Keyword analysis of my conversations
 

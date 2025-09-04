@@ -17,7 +17,7 @@
 
 <script setup>
 const route = useRoute()
-const { data } = await useAsyncData(() => queryCollection('content').path(`/${route.params.slug}`).first())
+const { data } = await useAsyncData(`blog-${route.params.slug}`, () => queryCollection('content').path(`/${route.params.slug}`).first())
 
 useSeoMeta({
   title: data.value?.title,

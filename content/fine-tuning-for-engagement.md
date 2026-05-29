@@ -11,7 +11,7 @@ But let’s assume the AI companies have a good reason to fine-tune the models t
 
 The agents changed that to this:
 
-![agent-conversation](/chinese-chat.png)
+![agent-conversation](/agent-conversation.png)
 
 The agents allowed users to prompt the models with much more ambitious tasks, because agents can loop themselves until they solve it. But what if the model is fine-tuned to end their final response with a question / follow-up? Can it happen that it will leave the task solved only at 90% and respond prematurely just to engage the user?
 
@@ -20,7 +20,7 @@ This is just anecdotal, but I feel like exactly this is happening. I work on qui
 Another pattern that I encounter: the agent does its work, and it looks fine, and the first 90% of its final response sounds reasonable, but the ending is like this:
 
 ```
-“One small thing to note: <actually a huge thing that contradicts the previous 90% of the message and makes me want to throw the full session into trash>”
+One small thing to note: <actually a huge thing that contradicts the previous 90% of the message and makes me want to throw the full session into trash>
 ```
 
 Very often this “small thing” is actually something the agent could solve during its turn, but I can’t avoid the feeling that it did this to me on purpose, just to make me burn more tokens.

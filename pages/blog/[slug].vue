@@ -44,8 +44,9 @@ h1 {
     color: #666;
 }
 
-.content p {
-    line-height: 1.6;
+.blog-post :deep(p:not(.date)),
+.blog-post :deep(li) {
+    line-height: 1.65;
     margin-bottom: 1rem;
 }
 

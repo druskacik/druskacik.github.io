@@ -10,9 +10,14 @@
 <script setup>
 const projects = [
     {
+        url: 'https://trainbot.eu',
+        title: 'TrainBot',
+        description: 'European night trains fares search engine.',
+    },
+    {
         url: 'https://infldb.com',
         title: 'Infldb',
-        description: 'European influencers database.',
+        description: 'Global influencers database.',
     },
     {
         url: 'https://classical.sk',
